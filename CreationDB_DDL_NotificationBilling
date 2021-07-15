@@ -1,0 +1,15 @@
+CREATE DATABASE `NotificationBilling` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci */;
+
+-- NotificationBilling.Notifications definition
+
+CREATE TABLE `Notifications` (
+  `customerNumber` varchar(12) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT 'Number of Customer',
+  `idAccountTwitter` varchar(30) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT 'Account Twitter Identifer',
+  `accountTwitter` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT 'Twitter Account User',
+  `dateCreated` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT 'Creation Date',
+  `status` int(11) DEFAULT NULL COMMENT 'Twitter Account Status'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO NotificationBilling.Notifications (customerNumber,idAccountTwitter,accountTwitter,dateCreated,status) VALUES
+	 ('01991742679','393188852','@fbgerardo','12/07/2021',1),
+	 ('01991742680','1398765575313186817','@axs50265297','13/07/2021',1);
